@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connect to Discord - Øxide</title>
+
+<style>
+    /* Fade-in animation for page content */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px); /* content starts slightly lower */
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.3s;
+}
+
+/* Staggered child animations (optional) */
+.fade-in > * {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+/* Keyframes for fade + slide up */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+:root{
+    --light: rgb(157,235,192);
+    --mid: rgb(81,138,105);
+    --dark: rgb(49,79,62);
+}
+
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, rgb(60,110,85), var(--dark));
+    color:white;
+    text-align:center;
+}
+
+.container{
+    padding-top:160px;
+}
+
+h1{
+    font-size:3rem;
+    color:var(--light);
+    text-shadow:0 0 25px var(--light), 0 0 50px var(--mid);
+    margin-bottom:20px;
+}
+
+p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:50px;
+    opacity:0.9;
+    font-size:1.2rem;
+}
+
+.grid{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.discord-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:20px 50px;
+    border-radius:60px;
+    background:transparent;
+    color:var(--light);
+    font-weight:bold;
+    font-size:1.2rem;
+    text-decoration:none;
+    border:2px solid var(--light);
+    box-shadow:0 0 20px var(--mid);
+    transition: all 0.3s ease;
+}
+
+.discord-btn:hover{
+    transform: scale(1.18);
+    background: rgba(157,235,192,0.1);
+    box-shadow: 0 0 30px var(--light),
+                0 0 60px var(--mid),
+                0 0 90px var(--mid);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    margin-top:60px;
+    background:rgba(0,0,0,0.3);
+}
+
+.back{
+    display:inline-block;
+    margin-top:50px;
+    color:var(--light);
+    text-decoration:none;
+    font-size:1rem;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Connect to Discord</h1>
+    <p>Join the official Øxide Discord to chat, get updates, and connect with other players!</p>
+
+    <div class="grid">
+        <a class="discord-btn" href="https://discord.gg/H9RBs2rf" target="_blank">💬 Join Discord</a>
+        <a class="discord-btn" href="https://discord.com" target="_blank">🌐 Discord Web</a>
+        <a class="discord-btn" href="https://discord.com/download" target="_blank">⬇ Download Discord</a>
+    </div>
+
+    <a href="index.html" class="back">← Back to Home</a>
+</div>
+
+<footer>
+    © 2026 Øxide — All Rights Reserved
+</footer>
+</body>
+</html>

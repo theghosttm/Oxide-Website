@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Øxide ReadMe</title>
+
+<style>
+    /* Fade-in animation for page content */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px); /* content starts slightly lower */
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.3s;
+}
+
+/* Staggered child animations (optional) */
+.fade-in > * {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+/* Keyframes for fade + slide up */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+:root{
+    --light: rgb(157,235,192);
+    --mid: rgb(81,138,105);
+    --dark: rgb(49,79,62);
+}
+
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, rgb(60,110,85), var(--dark));
+    color:white;
+    text-align:center;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    padding-top:140px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+h1{
+    font-size:3rem;
+    color:var(--light);
+    text-shadow:0 0 25px var(--light), 0 0 50px var(--mid);
+    margin-bottom:20px;
+}
+
+p{
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:25px;
+    text-align:left;
+}
+
+ol{
+    margin-left:30px;
+    margin-bottom:40px;
+}
+
+.back{
+    display:inline-block;
+    margin-top:40px;
+    color:var(--light);
+    text-decoration:none;
+    font-size:1rem;
+}
+
+strong{
+    color:var(--light);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Øxide Installation Instructions</h1>
+
+    <p>Follow these steps carefully to install Øxide Panel into Gorilla Tag:</p>
+
+    <ol>
+        <li>Make sure you have a Gorilla Tag mod loader installed (like <strong>BepInEx</strong>).</li>
+        <li>Locate your Gorilla Tag installation folder. Usually it's in <code>C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag</code>.</li>
+        <li>Inside the Gorilla Tag folder, find the <strong>Plugins</strong> directory. If it doesn’t exist, create a folder named <strong>Plugins</strong>.</li>
+        <li>Download the <strong>Øxide panel.dll</strong> file from the <strong>Download</strong> page.</li>
+        <li>Move or copy the <strong>Øxide panel.dll</strong> file into the <strong>Plugins</strong> folder.</li>
+        <li>Launch Gorilla Tag. Øxide Panel should automatically load with your mod menu.</li>
+        <li>In-game, open the Øxide menu using your configured keybind and start exploring all the features and fun mods.</li>
+    </ol>
+
+    <p><strong>Tips:</strong> Always make a backup of your Plugins folder before adding new mods. If the panel doesn’t show, make sure your mod loader is up-to-date.</p>
+
+    <a href="download.html" class="back">← Back to Download</a>
+</div>
+</body>
+</html>
