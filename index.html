@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Øxide</title>
+
+<style>
+:root{
+    --light: rgb(157,235,192);
+    --mid: rgb(81,138,105);
+    --dark: rgb(49,79,62);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: radial-gradient(circle at top, rgb(60,110,85), var(--dark));
+    color:white;
+    overflow-x:hidden;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 60px;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(15px);
+}
+
+nav h1{
+    color: var(--light);
+    text-shadow: 0 0 15px var(--light),
+                 0 0 30px var(--mid);
+}
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h2{
+    font-size:3.2rem;
+    color:var(--light);
+    text-shadow:0 0 25px var(--light),
+                0 0 50px var(--mid);
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:40px;
+    opacity:0.9;
+}
+
+.btn{
+    display:inline-block;
+    padding:18px 55px;
+    border-radius:50px;
+    background: transparent;
+    color: var(--light);
+    font-size:1.1rem;
+    font-weight:bold;
+    text-decoration:none;
+    border:2px solid var(--light);
+    box-shadow: 0 0 15px var(--mid);
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 25px var(--light),
+                0 0 50px var(--mid),
+                0 0 80px var(--mid);
+    background: rgba(157,235,192,0.1);
+}
+
+.section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.section h2{
+    color:var(--light);
+    text-shadow:0 0 20px var(--mid);
+}
+
+.card-container{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.card{
+    width:280px;
+    padding:30px;
+    border-radius:20px;
+    background: rgba(255,255,255,0.05);
+    border:1px solid var(--mid);
+    box-shadow:0 0 15px rgba(81,138,105,0.4);
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.05);
+    box-shadow:0 0 25px var(--light),
+               0 0 50px var(--mid);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    margin-top:60px;
+    background:rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>Øxide</h1>
+    <a href="download.html" class="btn" style="padding:10px 30px;">Download</a>
+</nav>
+
+<section class="hero">
+
+    <h2>Øxide Panel</h2>
+
+    <p>
+        Øxide Panel is a Gorilla Tag mod menu made to make your Gorilla Tag experience more fun!
+        <br><br>
+        Server By: ghost.application_quit<br>
+        Menu By: nyphrux
+    </p>
+
+    <a href="download.html" class="btn">Download Now</a>
+</section>
+
+<section class="section">
+    <h2>What Øxide Offers</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Clean UI</h3>
+            <p>Neon styled and smooth Gorilla Tag menu design.</p>
+        </div>
+
+        <div class="card">
+            <h3>Performance</h3>
+            <p>Optimized to stay lightweight and responsive.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fun Features</h3>
+            <p>Enhance your Gorilla Tag gameplay experience.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Øxide — All Rights Reserved
+</footer>
+
+</body>
+</html>
